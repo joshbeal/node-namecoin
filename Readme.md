@@ -1,8 +1,6 @@
 # node-bitcoin
 
-[![Build Status](https://travis-ci.org/freewil/node-bitcoin.png)](https://travis-ci.org/freewil/node-bitcoin)
-
-node-bitcoin is a simple wrapper for the Bitcoin client's JSON-RPC API.
+node-bitcoin is a simple wrapper for the Namecoin client's JSON-RPC API.
 
 The API is equivalent to the API document [here](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list).
 The methods are exposed as lower camelcase methods on the `bitcoin.Client`
@@ -10,13 +8,13 @@ object, or you may call the API directly using the `cmd` method.
 
 ## Install
 
-`npm install bitcoin`
+`npm install namecoin`
 
 ## Examples
 
 ### Create client
 ```js
-var client = new bitcoin.Client({
+var client = new namecoin.Client({
   host: 'localhost',
   port: 8332,
   user: 'username',
@@ -71,7 +69,7 @@ a certificate signed by an actual CA, to ensure you are connecting
 to your own bitcoind.
 
 ```js
-var client = new bitcoin.Client({
+var client = new namecoin.Client({
   host: 'localhost',
   port: 8332,
   user: 'username',
