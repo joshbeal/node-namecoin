@@ -16,7 +16,7 @@ object, or you may call the API directly using the `cmd` method.
 ```js
 var client = new namecoin.Client({
   host: 'localhost',
-  port: 8332,
+  port: 8336,
   user: 'username',
   pass: 'password'
 });
@@ -71,7 +71,7 @@ to your own bitcoind.
 ```js
 var client = new namecoin.Client({
   host: 'localhost',
-  port: 8332,
+  port: 8336,
   user: 'username',
   pass: 'password',
   ssl: true,
