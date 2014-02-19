@@ -1,9 +1,9 @@
-# node-bitcoin
+# node-namecoin
 
-node-bitcoin is a simple wrapper for the Namecoin client's JSON-RPC API.
+node-namecoin is a simple wrapper for the Namecoin client's JSON-RPC API.
 
-The API is equivalent to the API document [here](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list).
-The methods are exposed as lower camelcase methods on the `bitcoin.Client`
+The API is equivalent to the API document [here](https://github.com/namecoin/wiki/wiki/Client-API).
+The methods are exposed as lower camelcase methods on the `namecoin.Client`
 object, or you may call the API directly using the `cmd` method.
 
 ## Install
@@ -58,7 +58,7 @@ client.cmd(batch, function(err, address) {
 ## SSL
 See [Enabling SSL on original client](https://en.bitcoin.it/wiki/Enabling_SSL_on_original_client_daemon).
 
-If you're using this to connect to bitcoind across a network it is highly
+If you're using this to connect to namecoind across a network it is highly
 recommended to enable `ssl`, otherwise an attacker may intercept your RPC credentials
 resulting in theft of your bitcoins.
 
